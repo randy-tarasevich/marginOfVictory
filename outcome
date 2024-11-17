@@ -1,0 +1,18 @@
+let game = {
+ winner: {
+   name: "Red Dragons",
+   score: 87
+ },
+ loser: {
+   name: "Blue Knights",
+   score: 82
+ },
+ getMarginOfVictory() {
+   return this.winner.score - this.loser.score;
+ },
+ showSummary() {
+   console.log(`${this.winner.name} defeated ${this.loser.name}`);
+   console.log(`Final Score: ${this.winner.score} to ${this.loser.score}`);
+   console.log(`Margin of Victory: ${this.getMarginOfVictory()} points`);
+ }
+};
